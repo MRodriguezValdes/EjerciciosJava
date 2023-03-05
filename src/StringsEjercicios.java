@@ -1,4 +1,4 @@
-public class StringsEjercicios {
+public class StringsEjercicios extends ArrayListEjercicios {
     //Ejercicio 105
     //Utilazando la sobrecarga del metodo indexof podemos encotrar el numero de ocurrencias
     //

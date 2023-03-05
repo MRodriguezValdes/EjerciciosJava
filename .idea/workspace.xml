@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1231a84e-625b-419e-bc27-89ef8aef7e5f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayListEjercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayListEjercicios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringsEjercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringsEjercicios.java" afterDir="false" />
     </list>
@@ -56,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677870361473</updated>
       <workItem from="1677870363479" duration="1602000" />
-      <workItem from="1678009504264" duration="29330000" />
+      <workItem from="1678009504264" duration="32645000" />
     </task>
     <servers />
   </component>
@@ -81,9 +82,19 @@
           <line>115</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayListEjercicios.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ArrayListEjercicios.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/StringsEjercicios.java</url>
-          <line>73</line>
+          <line>71</line>
           <properties class="StringsEjercicios" method="masDeDosOcurrencias">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
