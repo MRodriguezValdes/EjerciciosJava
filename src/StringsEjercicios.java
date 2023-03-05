@@ -27,8 +27,6 @@ public class StringsEjercicios {
     }
 
     //Ejercicio 107
-//    Write a Java program to counts occurrences of a certain character in a given string
-
     public int cuantasVecesEstaElCaracter(String s1,Character s2){
         int count= 0 ;
         //Primera ocurrencia
@@ -42,7 +40,7 @@ public class StringsEjercicios {
 
     }
     //Ejercicio 108
-//    If there are two consecutive identical letters in the said string
+    //Verificamos que las letras consecutivas sean iguales.
     public boolean letrasConsecutivas(String s1){
         for (int i = 0; i < s1.length()-1; i++) {
             if(s1.charAt(i+1)==s1.charAt(i))return true;
