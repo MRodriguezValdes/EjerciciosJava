@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ArraysEjercicios {
+public class ArraysEjercicios  extends StringsEjercicios{
 
     //EJERCICIO 70:
 

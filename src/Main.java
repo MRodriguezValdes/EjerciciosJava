@@ -2,8 +2,9 @@ import java.util.Arrays;
 
 public class Main extends ArraysEjercicios {
     public  void start (){
-        char[] i ={'p','q','r', 's', 't','v'};
-        System.out.println( (char) queLetraFalta(i));
+        String s1 = "abcd abc aac baa abcaa";
+        String s2 ="Check two consecutive identical letters in a given string";
+        System.out.println(reverse(s2));
 
     }
 
