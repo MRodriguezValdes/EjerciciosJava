@@ -51,14 +51,68 @@ public class StringsEjercicios {
     }
 
     //Ejercicio 109
-//    Write a Java program that reverses all the words in a string that have odd lengths.
+    //Invertir palabras con longitud impar
 
     public String reverse(String s1){
-        if(s1.length()%2==0) return s1;
-        String result="";
-        for (int i = 0; i < s1.length(); i++) {
-
+        String[] palabras = s1.split(" ");
+        for (int i = 0; i < palabras.length; i++) {
+            if(palabras[i].length()%2==0){
+                String reverse = "";
+                for (int j = palabras[i].length()-1; j >=0 ; j--) {
+                    reverse+= palabras[i].charAt(j);
+                }
+                palabras[i]=reverse;
+            }
         }
-        return result;
+        return String.join(" ",palabras);
     }
+
+
+
+    //Ejercicio 110
+
+    public int masDeDosOcurrencias(String s1){
+        int count=0;
+        String contadas="";
+        for (int i = 0; i < s1.length()-1; i++) {
+            int countAux=0;
+            int index = i-1;
+            if((contadas.indexOf(s1.charAt(i))==-1)){
+                for (int j = i+1; j <s1.length() ; j++) {
+                    index =s1.indexOf(s1.charAt(i),index+1);
+                    if(index !=-1)countAux++;
+                    else break;
+                }
+                if(countAux>2){
+                    count++;
+                    contadas+=s1.charAt(i);
+                }
+            }
+        }
+
+
+        return count;
+    }
+    //Ejercicio 111
+    //Utilizamos el metodo substring para quedarnos con los trozos que deseamos.
+    public String eliminarPalabra(String s1, String  palabra){
+        int index = s1.indexOf(palabra);
+        return s1.substring(0,index)+" "+s1.substring(index+palabra.length());
+    }
+
+    //Ejercicio 112
+    //Seguimos utilizando indexOF
+    public boolean estaPresenteEnlaCadena(String s1, String s2){
+        //Utilizo esta variable para no repetir la comprobacion de una letra
+        String contadas ="";
+        for (int i = 0; i < s2.length(); i++) {
+            char letra = s2.charAt(i);
+            if(contadas.indexOf(letra)==-1){
+                if(s1.indexOf(letra)==-1) return false;
+                contadas+=letra;
+            }
+        }
+        return true;
+    }
+
 }
