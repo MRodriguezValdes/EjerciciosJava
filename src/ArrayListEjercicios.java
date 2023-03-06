@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -58,8 +59,67 @@ public class ArrayListEjercicios {
         return result;
     }
 
+    //Ejercicio 12
+    //Podemos hacerlo de la forma facil usando List y sublist
+    public ArrayList<Integer> porcionDeLista(ArrayList<Integer> numeros, int FIndex, int Lindex){
+        ArrayList<Integer> result = new ArrayList<>(numeros.subList(FIndex,Lindex));
+        return result;
+    }
+    //Ejercicio 13
+    public boolean sonIguales ( ArrayList<Integer> n1,ArrayList<Integer> n2){
+        return n1.equals(n2);
+    }
+    //Ejercicio 14
+    public void swap (ArrayList<Integer> n1,int i, int j){
+        int aux = n1.get(i);
+        n1.set(i,n1.get(j));
+        n1.set(j,aux);
+    }
+
+    public ArrayList<Integer> joinArrayList(ArrayList<Integer> n1,ArrayList<Integer> n2){
+        n1.addAll(n2);
+        return n1;
+    }
 
 
+    //Ejercicio 16
+    public ArrayList<Integer> copy (ArrayList<Integer> n1){
+        ArrayList<Integer>copia = new ArrayList<>();
+        copia.addAll(n1);
+        return copia;
+    }
 
+    //Ejercicio 17
+
+    public  void borrar (ArrayList<Integer> n1){
+        n1.clear();
+    }
+
+    //Ejercicio 18
+    public boolean estaVacio(ArrayList<Integer> n1){
+        return n1.isEmpty();
+    }
+
+    //Ejercicio 19
+    public  void  reducirEspacio ( ArrayList<Integer> n1) {
+        n1.trimToSize();
+    }
+    //Ejercicio 20;
+    public void aumentarlength(ArrayList<Integer> n1,int new_length){
+        n1.ensureCapacity(new_length);
+    }
+
+    //Ejercicio 21:
+
+    public void colocarElemeto(ArrayList<Integer> n1,int elemento){
+        n1.set(2,elemento);
+    }
+
+    //Ejercicio 22:
+    public void mostrarElementos ( ArrayList<Integer> n1){
+        for (int i = 0; i < n1.size(); i++) {
+            System.out.println(n1.get(i));
+        }
+    }
 
 }
